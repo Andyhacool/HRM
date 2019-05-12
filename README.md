@@ -1,7 +1,7 @@
 
 HRM System
 =====================
-An Human resource management system written in .NET Core
+An Human resource management system written in .NET Core (Back End)
 
 ## Setup:
 - You will need Visual Studio 2017 (15.7) and the .NET Core SDK (2.2).

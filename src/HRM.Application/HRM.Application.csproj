@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AutoMapper\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HRM.Domain\HRM.Domain.csproj" />
+    <ProjectReference Include="..\HRM.Infra.CrossCutting.Identity\HRM.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\HRM.Infra.Data\HRM.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

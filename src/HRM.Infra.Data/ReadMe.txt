@@ -1,10 +1,10 @@
 ﻿Installed
 
-1.Microsoft.EntityFrameworkCore
-2.Microsoft.EntityFrameworkCore.Design
-3.Microsoft.EntityFrameworkCore.SqlServer
-4.Microsoft.Extensions.Configuration
-5.Microsoft.Extensions.Configuration.FileExtensions
-6.Microsoft.Extensions.Configuration.Json
-7.Microsoft.NETCore.App
-8.System.Reflection.TypeExtensions
+1.Install-Package Microsoft.EntityFrameworkCore
+2.Install-Package Microsoft.EntityFrameworkCore.Design
+3.Install-Package Microsoft.EntityFrameworkCore.SqlServer
+4.Install-Package Microsoft.Extensions.Configuration
+5.Install-Package Microsoft.Extensions.Configuration.FileExtensions
+6.Install-Package Microsoft.Extensions.Configuration.Json
+7.Install-Package Microsoft.NETCore.App
+8.Install-Package System.Reflection.TypeExtensions

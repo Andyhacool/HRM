@@ -23,6 +23,9 @@ using HRM.Infra.CrossCutting.Identity.Interfaces.Services;
 using HRM.Infra.CrossCutting.Identity.Auth;
 using Microsoft.AspNetCore.Authorization;
 using HRM.Infra.CrossCutting.Identity.Authorization;
+using HRM.Infra.Data.Repository.EventSourcing;
+using HRM.Domain.Core.Events;
+using HRM.Infra.Data.EventSourcing;
 
 namespace HRM.Infra.CrossCutting.IoC
 {
@@ -58,6 +61,7 @@ namespace HRM.Infra.CrossCutting.IoC
             //// Infra - Identity
             services.AddTransient<IEmailSender, AuthEmailMessageSender>();
             services.AddTransient<ISmsSender, AuthSMSMessageSender>();
+
             // ASP.NET Authorization Polices
             services.AddSingleton<IAuthorizationHandler, ClaimsRequirementHandler>();
 
@@ -72,6 +76,11 @@ namespace HRM.Infra.CrossCutting.IoC
             services.AddSingleton<IJwtTokenHandler, JwtTokenHandler>();
             services.AddSingleton<ITokenFactory, TokenFactory>();
             services.AddSingleton<IJwtTokenValidator, JwtTokenValidator>();
+
+            // Infra - Data EventSourcing
+            services.AddScoped<IEventStoreRepository, EventStoreRepository>();
+            services.AddScoped<IEventStore, SqlEventStore>();
+            services.AddScoped<EventSourcingContext>();
         }
     }
 }

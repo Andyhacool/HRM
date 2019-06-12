@@ -8,14 +8,19 @@
   <ItemGroup>
     <Compile Remove="Migrations\20190212062931_init.cs" />
     <Compile Remove="Migrations\20190212070443_init.cs" />
+    <Compile Remove="Migrations\20190612100319_init.cs" />
+    <Compile Remove="Migrations\20190612100319_init.Designer.cs" />
+    <Compile Remove="Migrations\EventSourcing\20190612100656_init.cs" />
+    <Compile Remove="Migrations\EventSourcing\20190612100656_init.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
     <PackageReference Include="System.Reflection.TypeExtensions" Version="4.5.1" />
@@ -26,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <Folder Include="Migrations\EventSourcing\" />
   </ItemGroup>
 
 </Project>

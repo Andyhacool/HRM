@@ -30,8 +30,4 @@
     <ProjectReference Include="..\HRM.Domain\HRM.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\EventSourcing\" />
-  </ItemGroup>
-
 </Project>
